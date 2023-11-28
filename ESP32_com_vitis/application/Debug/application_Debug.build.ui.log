@@ -1,0 +1,30 @@
+2023-11-28T14:49:24.495079100255-14:49:24 **** Incremental Build of configuration Debug for project application ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/main.cc'
+000-'Invoking: ARM v7 g++ compiler'
+000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/ap576391/Documents/Hermann/ESP32_com_vitis/platform/export/platform/sw/platform/domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+000-'Finished building: ../src/main.cc'
+000-' '
+000-'Building file: ../src/platform.c'
+000-'Invoking: ARM v7 g++ compiler'
+000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/ap576391/Documents/Hermann/ESP32_com_vitis/platform/export/platform/sw/platform/domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+000-'Finished building: ../src/platform.c'
+000-' '
+000-'Building target: application.elf'
+000-'Invoking: ARM v7 g++ linker'
+000-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ap576391/Documents/Hermann/ESP32_com_vitis/platform/export/platform/sw/platform/domain/bsplib/lib -o "application.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+000-'Finished building target: application.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size application.elf  |tee "application.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000- 138527	   2616	  23504	 164647	  28327	application.elf
+000-'Finished building: application.elf.size'
+000-' '
+00255-
+14:49:26 Build Finished (took 1s.854ms)
+

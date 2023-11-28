@@ -1,0 +1,66 @@
+version = "1.0";
+clients =
+(
+	{ client_name = "project"; 
+		rules = (
+			{
+				context="software_version_and_target_device";
+				xml_map="software_version_and_target_device";
+				html_map="software_version_and_target_device";
+				html_format="UserEnvStyle";
+			},
+			{
+				context="user_environment";
+				xml_map="user_environment";
+				html_map="user_environment";
+				html_format="UserEnvStyle";
+			}
+		);
+     },
+	{ client_name = "vitis"; 
+		rules = (
+			{
+				context="vitis\\\\platform/1701177450897";
+				xml_map="vitis\\\\platform/1701177450897";
+				html_map="vitis\\\\platform/1701177450897";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="vitis\\\\application/1701177517520";
+				xml_map="vitis\\\\application/1701177517520";
+				html_map="vitis\\\\application/1701177517520";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="vitis\\\\application/1701177902000";
+				xml_map="vitis\\\\application/1701177902000";
+				html_map="vitis\\\\application/1701177902000";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="vitis\\\\application/1701178569469";
+				xml_map="vitis\\\\application/1701178569469";
+				html_map="vitis\\\\application/1701178569469";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="vitis\\\\application/1701179131715";
+				xml_map="vitis\\\\application/1701179131715";
+				html_map="vitis\\\\application/1701179131715";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="vitis\\\\application/1701179482575";
+				xml_map="vitis\\\\application/1701179482575";
+				html_map="vitis\\\\application/1701179482575";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="vitis\\\\tool/1701179881298";
+				xml_map="vitis\\\\tool/1701179881298";
+				html_map="vitis\\\\tool/1701179881298";
+				html_format="UnisimStatsStyle";
+			}
+		);
+     }
+);
